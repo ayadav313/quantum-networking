@@ -1,0 +1,241 @@
+Lecture 4:
+
+Quantum Computers
+Gates, circuits and programming
+
+Quantum gates
+
+Quantum gates
+• The same way
+classical gates manipulate only a few bits at a time,
+quantum gates manipulate only a few qubits at a time
+– Usually represented as unitary matrices we already saw
+
+• Circuit representation
+
+…boxes and different symbols
+depict operations on qubits
+
+Wires depict qubits
+
+…inheritence of classical computing –
+it is better to think of qubits as particles
+and gates as physical processes applied to those particles
+
+Pauli-X gate
+• Acts on a single qubit
+Dirac notation
+
+Matrix representation
+
+Circuit representation
+
+– Acting on pure states becomes a classical NOT gate
+
+Dirac notation…
+…is obviously more convenient for calculus
+
+Pauli-X gate
+– Acting on a general qubit state
+
+– It is its own inverse
+
+Hadamard gate
+• Acts on a single qubit
+– Corresponding to the Hadamard transform we already saw
+Dirac notation
+
+Unitary matrix
+
+Circuit representation
+
+…obviously, no classical equivalent
+
+– One of the most important gates for quantum computing
+
+Hadamard gate
+• An interesting example
+
+Acting on pure states…
+…gives a balanced superposition…
+…both states, if measured,
+give either 0 or 1 with equal probability
+
+Hadamard gate
+– Applying another Hadamard gate
+• to the first result
+
+• to the second result
+
+Hadamard gate
+Both states give equal probabilities when measured…
+
+…but when Hadamard transformation is applied
+it produces two different states
+
+• The example gives an answer to the question asked before –
+why state of the system
+has to be specified with complex amplitudes
+and cannot be specified with probabilities only
+
+Pauli-Y gate
+• Acts on a single qubit
+Dirac notation
+
+Matrix representation
+
+Circuit representation
+
+…another gate with no classical equivalent
+
+CNOT gate
+• Controlled NOT gate
+• Acts on two qubits
+Matrix representation
+
+– Classical gate operation
+
+Circuit representation
+
+CNOT gate
+– Example of acting on a superposition
+
+Toffoli gate
+• Also called Controlled Controlled NOT
+• Acts on three qubits
+Matrix representation
+
+– Classical gate operation
+
+Circuit representation
+
+Quantum circuits
+
+Universal set of quantum gates
+• There is more than one universal set of gates for classical
+computing
+• What about quantum computing, is there a universal set of
+gates to which any quantum operation possible can be
+reduced to?
+
+Universal set of quantum gates
+• No, but any unitary transformation
+can be approximated to arbitrary accuracy
+using a universal gate set
+– For example (H, S, T, CNOT)
+Hadamard gate
+
+Phase gate
+
+π/8 gate
+
+CNOT gate
+
+Quantum circuits
+• The same way
+classical gates can be arranged to form a classical circuit,
+quantum gates can be arranged to form a quantum circuit
+Unlike classical circuits,
+the same number of wires
+is going throughout the circuit
+…as said before,
+inheritence of classical computing –
+usually it does not reflect the actual implementation
+
+• Quantum circuit is the most commonly used model
+to describe a quantum algorithm
+
+Quantum programming
+
+Quantum programming
+• There is already a number of programming languages adapted for
+quantum computing
+– but there is no actual quantum computer for algorithms to be executed on
+
+• The purpose of quantum programming languages is to provide a
+tool for researchers, not a tool for programmers
+• QCL is an example of such language
+
+Sample code: Quantum Computing with Qiskit: Pauli X gate
+
+QCL
+Language
+
+Quantum programming
+• QCL (Quantum Computation Language)
+C-like syntax
+allows combining of
+quantum and
+classical code
+
+http://tph.tuwien.ac.at/~oemer/qcl.html
+
+QCL
+• Comes with its own interpreter and quantum system simulator
+Start interpreter…
+…with a 4 qubit quantum heap (32 if omitted)
+Numeric simulator
+
+Shell environment
+…there is no assumption about the quantum computer implementation
+
+QCL
+• Example of interpreter interactive use
+Initial quantum state
+Global quantum register definition
+
+Quantum operator
+Resulting state
+
+Qubits allocated/Quantum heap total
+
+QCL
+• Example of initialization and measurement within interpreter
+
+Reinitializations have no effect on allocations
+
+QCL
+• Examples of quantum registers, expressions and references
+
+Reference definitions have no effect on quantum heap
+
+QCL
+• Example of operator definition
+
+QCL
+– Newly defined operator usage
+Force interactive use…
+…or interpreter will execute file content and exit
+
+Toffoli gate is its own inverse
+QCL allows inverse execution
+
+References
+•
+
+•
+
+•
+•
+•
+•
+
+•
+
+University of California, Berkeley,
+Qubits and Quantum Measurement and Entanglement, lecture notes,
+http://www-inst.eecs.berkeley.edu/~cs191/sp12/
+Michael A. Nielsen, Isaac L. Chuang,
+Quantum Computation and Quantum Information,
+Cambridge University Press, Cambridge, UK, 2010.
+Colin P. Williams, Explorations in Quantum Computing, Springer, London, 2011.
+Samuel L. Braunstein, Quantum Computation Tutorial, electronic document
+University of York, York, UK
+Bernhard Ömer, A Procedural Formalism for Quantum Computing, electronic
+document, Technical University of Vienna, Vienna, Austria, 1998.
+Artur Ekert, Patrick Hayden, Hitoshi Inamori,
+Basic Concepts in Quantum Computation, electronic document,
+Centre for Quantum Computation, University of Oxford, Oxford, UK, 2008.
+Wikipedia, the free encyclopedia, 2014.
+
+

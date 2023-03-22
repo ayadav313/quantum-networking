@@ -1,0 +1,100 @@
+Installing Qiskit and IBMQ
+Setup
+
+Installing Anaconda
+
+•
+
+Link: https://www.anaconda.com/
+
+•
+
+After the download and installation, check if you can open
+Anaconda Navigator
+
+Creating Anaconda Environment
+•
+
+To create a new anaconda environment, we use the following code.
+If on a Mac, open terminal. If on Windows, open command prompt.
+
+•
+
+To create a new python environment, we use the following code.
+Let’s name it “quantum”. conda create -n quantum python=3
+
+•
+
+Since we named our environment quantum, conda activate
+quantum will open the environment . If you gave another name,
+make sure to type that name to open the environment.
+
+•
+
+Installing Qiskit
+•
+
+Qiskit is a python module, we can install it using pip. The code is as
+follows:
+
+•
+
+For MacOS users: python -m pip install ‘qiskit[visualization]’
+
+•
+
+For Windows users: pip install qiskit[visualization]
+
+•
+
+This code automatically installs Jupyter lab on your environment. So
+type jupyter notebook to open jupyter lab.
+
+•
+
+Additionally install: pip install rise
+
+Creating a new IBMQ Account
+
+•
+
+Link : https://quantum-computing.ibm.com/
+
+•
+
+From the link above create your new account and login from the
+same link after you create a new account.
+
+API Token
+You will be able to see an API Token after you login.
+
+•
+
+Now go to the jupyter lab, create a new ‘.ipynb’ le. Now copy,
+paste and run the code in the next slide. Remember to replace the
+API token with your own token.
+
+fi
+
+•
+
+Code
+# Importing the 'Qiskit' Module
+from qiskit import *
+from qiskit import IBMQ
+# paste the api code in 'apostrophes'
+#you only need to save the account once, from the next time just load the account.
+IBMQ.save_account('PASTE_Your_API_Toeken_Here')
+IBMQ.load_account()
+# Creating a Quantum circuit
+circuit = QuantumCircuit(2,2)
+# To view the circuit, we use the 'draw()' funcction.
+circuit.draw()
+
+Output
+
+•
+
+Output should look like this:
+
+

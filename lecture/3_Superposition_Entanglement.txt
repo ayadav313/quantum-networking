@@ -1,0 +1,191 @@
+Lecture 4 (supplemental materials) + Parag Lala
+Chapter 6: Superposition and Entanglement
+CS 518
+
+2/8/23
+
+Mathematical Model of Qubit
+Qubit
+
+2
+
+Physical
+Realizations
+of Qubits
+
+3
+
+Classical vs. Quantum Computers Basics
+Classical Computer
+
+Quantum Computer
+
+Computer
+Science
+
+low charge high charge
+
+IC
+
+Circuit Module Logic gates Transistor
+
+4-bit Classical Register
+
+Quantum Circuit
+
+Q-Chamber
+
+4-qubit Register
+• One number
+from 0 to 15
+one at a time
+
+• All 16 numbers in a
+superposition allowing
+truly parallel computation
+
+• Exponential growth with
+addition of each qubit:
+
+4
+
+Superposition of Qubit
+zˆ = |0 >
+|> =  |0> +  |1>
+|ψ >
+θ
+
+yˆ
+
+φ
+xˆ
+-zˆ = |1 >
+
+)
+In general, the electron is a quantum system
+
+5
+
+6
+
+7
+
+8
+
+Qubit
+
+State One
+
+Quantum Entanglement
+Qubit
+
+its unobserved pair
+
+on the state of another
+
+qubit can depend
+
+Non-Locality and Entanglement
+Imagine we have created a pair of entangled qubits.
+
+11
+
+Non-Locality and
+Entanglement
+
+• Even if we move one qubit to the Moon,
+the global state of the two qubits cannot be
+described solely in terms of the individual
+state of each of them!
+• In particular, if we measure one of the
+qubits, this apparently instantaneously
+affects the other one.
+
+Spooky link between atoms
+12
+
+Entanglement Creation
+•
+
+To create entangled photons, we use a special type of
+crystal to split one photon into an entangled pair of
+photons
+
+•
+
+A single incoming beam (typically blue or ultraviolet)
+can thus conjure up two beams (typically red)
+
+•
+
+This process occurs particle by particle: each blue
+photon splits into two red ones
+
+Quantum Computing Ĉ Quantum Informatics
+Quantum Networking
+Teleportation
+Quantum Processor
+Quantum Channel
+
+Classical Channel
+Quantum Internet
+Classical
+Channel
+
+A
+
+14
+
+Quantum
+Channel
+
+B
+
+Teleportation
+Spooky link between atoms
+
+• A qubit transmitted from one
+location to another
+• Related to entanglement of
+quantum systems.
+• Defined as a process by which a
+qubit (the basic unit of quantum
+information) can be transmitted
+from one location to another,
+• without the qubit actually being
+transmitted through space.
+
+15
+
+Teleportation
+1. Two entangled qubits, forming an EPR pair, are generated
+and distributed so that one qubit (particle A) is stored by
+Router A and another qubit (particle B) is stored by
+Router B
+
+Router B
+
+Router B
+
+Router A
+
+A
+
+Router A
+
+Router B
+
+2. Router A performs a BSM upon the two qubits at its side,
+i.e., the qubit to be transmitted and particle A
+
+B
+
+3. Then, Router A sends the measurement outcome, i.e., 2
+classical bits, to Router B with a classical channel
+4. By processing particle B according to the measurement
+outcome, Router B finally obtains the qubit by applying
+appropriate unitary transformation
+
+16
+
+

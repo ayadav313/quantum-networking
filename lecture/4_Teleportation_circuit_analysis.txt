@@ -1,0 +1,413 @@
+Teleportation and
+Superdense Coding
+Teleportation
+Alice
+
+unknown qubit
+|q = α|0+β|1.
+
+Shared EPR pair
+
+Bob
+
+G
+Alice applies a CNOT
+and a Hadamard to
+q and her EPR half.
+She measures the bits in
+the 0/1 basis and sends
+the information to Bob.
+
+Bob receives the two
+bits and acts on his
+side of the EPR, in
+a way that recreates
+the unknown qubit
+|q = α|0+β|1.
+
+Entanglement and Teleportation
+Bob
+Alice
+a
+b
+a, b
+Alice measures in a Bell basis and
+Bob applies Z X to his qubit
+2 bits
+Communicates result to Bob
+Bell state is distributed to
+Alice and Bob
+
+Qubit in state |Ψ
+>
+is given to Alice
+
+Entanglement and Teleportation
+Bob
+Alice
+a
+b
+a, b
+Alice measures in a Bell basis and
+Bob applies Z X to his qubit
+2 bits
+Communicates result to Bob
+Bell state is distributed to
+Alice and Bob
+
+Qubit in state |Ψ
+>
+is given to Alice
+
+|Ψ>
+
+Alice
+
+M
+
+H
+
+M
+
++
+
+|BA>
+
+b
+1
+M
+
+b
+2
+|0>
+
+To solve at each
+|Ψn>
+
+H
+
+|B00>
+
+Bob |0>
+
++
+
+|BB>
+
+X
+|Ψ1>
+
+|Ψ2>
+
+|Ψ3> |Ψ4>
+
+|Ψ5>
+
+|Ψ6>
+
+b2
+
+Measure
+
+Z
+
+b1
+
+|Ψ>
+|Ψ7>
+
+Entanglement and Teleportation
+Bob
+Alice
+a
+b
+a, b
+Alice measures in a Bell basis and
+Bob applies Z X to his qubit
+2 bits
+Communicates result to Bob
+Bell state is distributed to
+Alice and Bob
+
+Qubit in state |Ψ>
+is given to Alice
+
+|Ψ>
+
+Alice
+
+M
+
+H
+
+M
+
++
+
+|BA>
+
+b
+1
+
+b
+2
+|0>
+
+H
+
+|B00>
+
+Bob |0>
+
++
+|BB>
+
+X
+|Ψ1>
+
+|Ψ2>
+
+|Ψ3> |Ψ4>
+
+|Ψ5>
+
+|Ψ6>
+
+b2
+
+Z
+
+b1
+
+|Ψ
+>
+|Ψ7
+>
+
+Entanglement and Teleportation Circuit
+
+|Ψ>
+
+Alice
+
+b
+1
+
+M
+
++
+
+|BA
+>
+|0>
+
+M
+
+H
+
+b
+2
+
+H
+|B00>
+
+Bob |0>
+
++
+
+|BB
+>
+
+|Ψ1
+>
+
+|Ψ2
+>
+
+|Ψ3 |Ψ4
+>
+>
+
+|Ψ5
+>
+
+X
+|Ψ6
+>
+
+b2
+
+Z
+
+b1
+
+|Ψ>
+|Ψ7
+>
+
+Entanglement and Teleportation
+Bob
+Alice
+a
+b
+a, b
+Alice measures in a Bell basis and
+Bob applies Z X to his qubit
+2 bits
+Communicates result to Bob
+Bell state is distributed to
+Alice and Bob
+
+Qubit in state |Ψ
+>
+is given to Alice
+
+|Ψ>
+
+Alice
+
+b
+1
+
+M
+
++
+
+|BA
+>
+|0>
+
+M
+
+H
+
+M
+b
+2
+
+To solve at each
+|Ψn>
+
+H
+
+|B00>
+
+Bob |0>
+
++
+
+|BB
+>
+
+|Ψ1
+>
+
+|Ψ2
+>
+
+|Ψ3 |Ψ4
+>
+>
+
+|Ψ5
+>
+
+X
+|Ψ6
+>
+
+b2
+
+Measure
+
+Z
+
+b1
+
+|Ψ
+>
+|Ψ7
+>
+
+What is Teleportation?
+It is not like how you see it in the movies! We can teleport information, but not
+matter. Specifically, we can transfer the state of one qubit to another over long
+distances.
+Recently, a Chinese team used a satellite to teleport a qubit 1400 kilometers,
+setting the world record! Using fiber optic cables, the maximum range is around
+100 kilometers because of decoherence.
+Decoherence is when a qubit interacts too much with its environment and
+collapses prematurely. The superposition is destroyed and information is lost.
+
+Why is Teleportation Needed?
+In classical computers, there is no such thing as teleportation. Computers can
+make a copy of the data and send the copy. This is impossible in quantum
+computers because of the no-cloning theorem.
+It is impossible to create a copy of an arbitrary quantum state because we would
+know the position and momentum of a particle which violates the Heisenberg
+uncertainty principle.
+To move the state of a qubit over long distances without physically transporting
+it, we can teleport the original state to the target qubit.
+
+Overview of the Teleportation Process
+There are 3 qubits used in the process of teleportation:
+The qubit whose state will be teleported, called the input
+The qubit who will receive the state, called the output
+An auxiliary qubit to help the process, called the ancilla
+The ancilla and output qubits are entangled at location A and the output is sent to
+the destination, location B. The teleportation can now occur any time after this.
+
+The teleportation process is started at location A, then information is sent via a
+classical channel to location B to finish the process.
+Since we are sending information classically, teleportation is not faster than light.
+
+The Teleportation Process
+1) At location A, we have a single-qubit state: |Ψ⟩ = α|0⟩ + β|1⟩
+where α and β are unknown. If they were known, we could just send them
+classically and re-create the quantum state at the destination.
+1) Entangle the ancilla with the output qubit, forming a bell state:
+|ϑ⟩ = ( |00⟩ + |11⟩ )
+Then send the output qubit to location B.
+1) Create a tensor product between the input and entangled state:
+ω1 = Ψ ⊗ ϑ = ( α|000⟩ + α|011⟩ + β|100⟩ + β|111⟩ )
+
+The Teleportation Process cont.
+4)
+
+The two qubits in location A are sent through a CNOT gate.
+ω1 = ( α|000⟩ + α|011⟩ + β|110⟩ + β|101⟩ )
+
+5)
+
+The input qubit is sent through a Hadamard gate.
+ω2 = ½ [ |00⟩( α|0⟩ + β|1⟩ ) + |01⟩( α|1⟩ + β|0⟩ )
++ |10⟩( α|0⟩ - β|1⟩ ) + |00⟩( α|1⟩ - β|0⟩ ) ]
+Using the identity matrix, I and the three Pauli matrices, X, Y, and Z:
+ω2 = ½ [ |00⟩ I|Ψ⟩ + |01⟩ X|Ψ⟩ + |10⟩ Z|Ψ⟩ + |00⟩ XZ|Ψ⟩ ]
+
+The Teleportation Process cont.
+6)
+
+Measure the input and ancilla qubits and send the result to location B via a
+classical channel. Check the value and apply gates as shown
+Value
+00
+01
+10
+11
+
+Gates
+I
+X
+Z
+ZX
+
+The result of the measurement in location A
+returns 00, 01, 10, or 11.
+This corresponds to the output qubit’s state being:
+( α|0⟩ + β|1⟩ ) , ( α|1⟩ + β|0⟩ ) ,
+( α|0⟩ - β|1⟩ ) , or ( α|1⟩ - β|0⟩ )
+Applying the gates shown in the table will
+transform the output qubit into ( α|0⟩ + β|1⟩ ).
+
+

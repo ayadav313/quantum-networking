@@ -1,0 +1,1038 @@
+Quantum Networking and Security
+CS 518
+Lecture 1
+Prof M Rahman
+
+1
+
+Overview- Quantum Networking: Teleportation
+
+• “Teleportation” is a magic word, exotic and evocative,
+but it has been appearing in serious technical literature with
+increasing frequency.
+
+Quantum networking/ Internet
+Classical
+Channel
+
+• Both theoretically fascinating and experimentally demonstrated,
+teleportation is the key to quantum networks
+
+A
+
+Quantum
+Channel
+
+B
+
+• .Only the quantum state moves
+
+2
+
+Quantum Networking/Internet
+❑ Basics
+•
+
+Quantum networks for computation
+
+•
+
+Quantum networks for communication
+
+•
+
+Overview of the elements of a quantum network
+
+❑ Elements of a quantum network
+•
+
+End nodes: quantum processors
+
+•
+
+Communication lines: physical layer
+
+•
+
+3
+
+•
+
+Fiber optic networks
+
+•
+
+Free space network
+
+Repeaters
+•
+
+Trusted repeaters
+
+•
+
+Quantum repeaters
+
+•
+
+Error correction
+
+•
+
+Entanglement purification
+
+Quantum network uses Quantum computers
+❑ Applications
+•
+
+Secure communications
+
+❑ Current status
+•
+
+Quantum Internet
+
+•
+
+Quantum networks of computation
+
+•
+
+Experimental quantum models
+
+•
+
+Mobile quantum network
+
+•
+
+QKD networks
+
+Why Quantum Computing
+• Moore’s Law: transistors
+double every 2 year
+• Slowing down
+• Transistors cannot be
+made smaller – laws of
+quantum mechanics start
+to take over
+• Post-silicon era
+4
+
+Why Quantum Computing
+
+Computer technology is making
+devices smaller and smaller…
+…reaching a point where classical
+physics is no longer a suitable
+model for the laws of physics.
+
+kT log(2)
+
+5
+
+Limitations of Classical Computers
+• RSA encryption (2048-bit)
+• 100,000 computers in parallel
+• 3 GHz processors
+• Factoring would take longer than the
+age of the universe
+
+• Quantum simulation: inefficient with
+classical computers
+• Feynman: why not use quantum
+mechanics for computation?
+6
+
+Quantum Computing Pioneers
+• Yuri Manin (1937- ), mathematician
+• 1980: First to propose the idea of the quantum computer
+
+• Paul Benioff (1930- ), physicist
+• 1980: Described quantum mechanical models of computers
+
+• Richard Feynman (1918-1988), physicist
+• 1981: Presented a logical quantum computer model
+• Demonstrated that a quantum system cannot be simulated
+with a classic computer
+• Demonstrated that the traditional approach to computer
+development would never lead to a revolution
+7
+
+Quantum Mechanics developed in 1927
+by the world’s greatest physicists
+
+8
+
+Quantum Mechanics developed in 1927
+by the world’s greatest physicists
+Schrodinger
+Pauli Heisenberg
+
+Debye
+
+Dirac
+
+Bragg
+Langmuir
+
+Planck
+
+Curie
+
+Lorentz
+
+Compton
+
+Einstein
+
+de Broglie
+
+Born
+Bohr
+Wilson
+
+Richardson
+
+9
+
+A History of Quantum Computing
+1935
+
+1964
+
+1970
+
+1981
+
+1982
+
+The EPR
+Paradox
+
+Bell’s
+Inequality
+
+Birth of quantum
+information theory
+
+First conference on
+physics of computation
+
+Discovery of
+topological
+quantum order
+
+Quantum
+cryptography
+
+1984
+
+1993
+Circuit QED is
+demonstrated
+
+2006 12
+2007
+
+2001
+
+2000
+
+1998
+
+7
+
+2
+
+2004 Experimentally
+
+1997
+Topological
+codes
+
+factoring 15
+
+The transmon
+superconducting
+qubit
+
+2008 28
+
+2012
+
+2015
+
+1996
+
+1995
+
+2017
+
+50
+Coherence time
+improvement
+Qubits in existing quantum computers
+
+Demonstrate
+simple error
+correction code
+
+1994
+
+DiVincenzo Criteria Quantum error
+for building a
+correction
+quantum computer
+
+2016
+IBM makes quantum
+computing available
+on IBM Cloud
+
+Quantum
+teleportation
+
+Shor’s Factoring
+Algorithm
+
+2019
+53
+
+IBM launches
+commercial universal
+quantum computing
+
+Google develops
+quantum computer
+10
+
+53 qubit Google’s Sycamore Quantum Computer
+
+53 qubit Google’s Sycamore Quantum Computer ; 23 Oct , 2019
+
+Google’s Quantum Supremacy
+
+53 qubit Google’s Sycamore Quantum Computer ; 23 Oct , 2019
+
+Quantum Networking/Internet
+❑ Basics
+•
+
+Quantum networks for computation
+
+•
+
+Quantum networks for communication
+
+•
+
+Overview of the elements of a quantum network
+
+❑ Elements of a quantum network
+•
+
+End nodes: quantum processors
+
+•
+
+Communication lines: physical layer
+
+•
+
+13
+
+•
+
+Fiber optic networks
+
+•
+
+Free space network
+
+Repeaters
+•
+
+Trusted repeaters
+
+•
+
+Quantum repeaters
+
+•
+
+Error correction
+
+•
+
+Entanglement purification
+
+Quantum network uses Quantum computers
+❑ Applications
+•
+
+Secure communications
+
+❑ Current status
+•
+
+Quantum Internet
+
+•
+
+Quantum networks of computation
+
+•
+
+Experimental quantum models
+
+•
+
+Mobile quantum network
+
+•
+
+QKD networks
+
+From top to bottom, the system gradually
+cools from four Kelvin -- liquid-helium
+temperatures -- to 800 milliKelvin,
+100 milliKelvin and, finally, 10 milliKelvin.
+Inside the canister where the chip is, that's 10
+thousandths of a degree above absolute zero
+14
+
+Technical Summary
+Classical
+Bit
+
+Computer
+Quantum
+Quantum Computing Essential
+Ingredients
+
+Quantum Networking
+
+Qubit
+
+Teleportation
+
+Science
+
+Physics
+
+Superposition
+
+Entanglement
+
+EPR Qubit Pair
+
+Quantum Processor
+Quantum Channel
+
+Classical Channel
+Quantum Internet
+Classical
+Channel
+
+A
+
+15
+
+Quantum
+Channel
+
+B
+
+Overview- Quantum Networking: Teleportation
+• “Teleportation” is a magic word, exotic and evocative,
+but it has been appearing in serious technical literature with
+increasing frequency.
+• Both theoretically fascinating and experimentally demonstrated,
+teleportation is the key to quantum networks
+• When used in discussions about quantum information,
+teleportation refers not to Captain Kirk stepping into a machine on
+the starship Enterprise, dissolving and reappearing on a planet’s
+surface, but to an operation in which a quantum variable dissolves
+here and reappears there, on a different physical device. Only the
+quantum state moves; the electron or other physical device
+remains where it was, and the receiver can in fact be a very
+different form of physical device than the sender. The quantum
+state is destroyed at the sender in the process.
+• Classical networks communicate by physically copying data and
+transmitting the copy, but the rules of quantum mechanics forbid
+the creation of independent copies of an unknown, arbitrary
+quantum state. Instead of risking the loss of valuable, fragile
+quantum data by directly transmitting our only copy, networks will
+prepare generic states that are used to teleport data or to perform
+teleportation-derived operations on the data.
+
+16
+
+Overview- Quantum Networking: Teleportation
+• Quantum networks bring new capabilities to
+communication systems. Quantum physical effects
+can be used to detect eavesdropping, to improve the
+share sensitivity of separated astronomical
+instruments or to create distributed states that will
+enable numerical quantum computation over a
+distance using teleportation.
+• Quantum communication is the exchange of
+quantum states over a distance, generally requiring
+the support of substantial classical communication.
+• The quantum states that are exchanged may be
+“standalone” states, an individual element of
+quantum data. They may also be part of a larger
+quantum state, spanning devices or even network
+nodes in a way no shared classical state can. These
+latter states we refer to as entangled states, which we
+will study extensively in this course
+17
+
+Quantum Networking- Teleportation
+
+18
+
+Quantum Networking
+
+19
+
+Overview (Cont..)
+
+• Applications running on classical computers will use
+these quantum states to accomplish one of the above
+tasks. The classical computer is connected to a quantum
+device, which may do no more than measure the quantum
+states to find a classical value (such as a bit of a secret
+key), or may store them for use in more complex quantum
+computers.
+• A classical computer will treat a quantum computer as
+a type of coprocessor; likewise, the classical computer will
+see the quantum network through the eyes of a separate
+device.
+• Because quantum data is fragile and some quantum
+operations are probabilistic, errors and distributed
+calculations must be managed aggressively and perhaps
+cooperatively among nodes. Solutions to these problems
+will have both similarities to and differences from purely
+classical networks.
+• Architectures for large-scale quantum networking and
+internetworking are in development, paralleling
+theoretical and experimental work on physical layers and
+low-level error management and connection technologies.
+Unentangled quantum networks have already been
+deployed, starting in the early 2000s; as of early 2014,
+entangled networks are not yet deployed, but may appear
+within the next few years and will form a vibrant research
+topic in the coming decade.
+20
+
+Quantum Internet/Networking
+❖ The quantum internet- a network interconnecting
+remote quantum devices through quantum links in
+synergy with classical ones –is envisioned as the final
+stage of the quantum revolution, opening
+fundamentally new communications and computing
+capabilities.
+• Quantum networks form an important element
+of quantum computing and quantum
+communication systems.
+• Quantum networks facilitate the transmission of
+information in the form of quantum bits, also called qubits,
+between physically separated quantum processors.
+• A quantum processor is a small quantum computer
+being able to perform quantum logic gates on a certain
+number of qubits.
+• Quantum networks work in a similar way to classical
+networks. The main difference is that quantum
+networking, like quantum computing, is better at solving
+certain problems, such as modeling quantum systems.
+21
+
+21
+
+Quantum networks for computation
+• Quantum networks for computation
+• Networked quantum computing or distributed quantum computing[1][2] works by linking
+multiple quantum processors through a quantum network by sending qubits in between them
+• Doing this creates a quantum computing cluster and therefore creates more computing
+potential. Less powerful computers can be linked in this way to create one more powerful
+processor.
+• This is analogous to connecting several classical computers to form a computer cluster in
+classical computing
+• Like classical computing, this system is scalable by adding more and more quantum
+computers to the network
+• Currently, quantum processors are only separated by short distances.
+22
+
+Quantum Communication
+• In the realm of quantum communication, one wants to send qubits from one
+quantum processor to another over long distances.[3]
+• This way, local quantum networks can be intra-connected into a quantum internet.
+• A quantum internet[1] supports many applications, which derive their power from the fact that
+by creating quantum entangled qubits, information can be transmitted between the remote
+quantum processors.
+• Most applications of a quantum internet require only very modest quantum processors. For
+most quantum internet protocols, such as quantum key distribution in quantum cryptography, it
+is sufficient if these processors are capable of preparing and measuring only a single qubit at a
+time.
+• This is in contrast to quantum computing where interesting applications can only be realized if
+the (combined) quantum processors can easily simulate more qubits than a classical computer
+(around 60[4]).
+• Quantum internet applications require only small quantum processors, often just a single qubit,
+because quantum entanglement can already be realized between just two qubits.
+• A simulation of an entangled quantum system on a classical computer cannot simultaneously
+provide the same security and speed.
+23
+
+Quantum Internet/Networking
+• The Quantum Internet – a
+network
+interconnecting
+remote quantum devices
+through quantum links in
+synergy with classical ones
+• The quantum internet is a
+network that lets quantum
+devices
+exchange
+information
+within
+an
+environment that harnesses
+the weird laws of quantum
+mechanics.
+
+➢ Quantum network uses
+Quantum computers
+
+24
+
+Quantum Networking
+• Unsurprisingly, qubits cannot be used to send the kind of data we are familiar with, like emails and
+WhatsApp messages.
+• But the strange behavior of qubits is opening up huge opportunities in other, more niche
+applications.
+• QUANTUM (SAFER) COMMUNICATIONS
+• One of the most exciting avenues that researchers, armed with qubits, are exploring, is security.
+• When it comes to classical communications, most data is secured by distributing a shared key to
+the sender and receiver and then using this common key to encrypt the message. The receiver
+can then use their key to decode the data at their end.
+
+Quantum Networking:
+QKD
+• Measuring causes the state of the qubit to collapse,
+but it is the value that is read out during the
+measurement process that is important. The qubit, in
+a way, is only there to transport the key value.
+• More importantly, QKD means that it is easy to find
+out whether a third party has eavesdropped on the
+qubits during the transmission since the intruder
+would have caused the key to collapse simply by
+looking at it.
+• If a hacker looked at the qubits at any point while
+they were being sent, this would automatically
+change the state of the qubits. A spy would inevitably
+leave behind a sign of eavesdropping – which is why
+cryptographers maintain that QKD is "provably"
+secure.
+
+Quantum Networking:
+QKD
+•
+
+SO, WHY A QUANTUM INTERNET?
+•
+
+QKD technology is in its very early stages. The "usual" way to create QKD at the
+moment consists of sending qubits in a one-directional way to the receiver, through
+optic-fiber cables; but those significantly limit the effectiveness of the protocol.
+
+•
+
+Qubits can easily get lost or scattered in a fiber-optic cable, which means that
+quantum signals are very much error-prone, and struggle to travel long distances.
+Current experiments, in fact, are limited to a range of hundreds of kilometers.
+
+•
+
+There is another solution, and it is the one that underpins the quantum internet: to
+leverage another property of quantum, called entanglement, to communicate
+between two devices.
+
+•
+
+When two qubits interact and become entangled, they share particular properties
+that depend on each other.
+
+•
+
+•
+
+While the qubits are in an entangled state, any change to one particle in the
+pair will result in changes to the other, even if they are physically separated.
+
+•
+
+The state of the first qubit, therefore, can be "read" by looking at the
+behavior of its entangled counterpart. That's right: even Albert Einstein
+called the whole thing "spooky action at a distance".
+
+And in the context of quantum communication, entanglement could in effect,
+teleport some information from one qubit to its entangled other half, without the
+need for a physical channel bridging the two during the transmission.
+
+Quantum Networking:
+Entanglement
+•
+
+HOW DOES ENTANGLEMENT WORK?
+•
+
+The very concept of teleportation entails, by definition, the lack of a physical
+network bridging between communicating devices. But it remains that
+entanglement needs to be created in the first place, and then maintained.
+
+•
+
+To carry out QKD using entanglement, it is necessary to build the appropriate
+infrastructure to first create pairs of entangled qubits, and then distribute
+them between a sender and a receiver. This creates the "teleportation"
+channel over which cryptography keys can be exchanged.
+
+•
+
+Specifically, once the entangled qubits have been generated, you have to send
+half of the pair to the receiver of the key. An entangled qubit can travel
+through networks of optic fiber, for example; but those are unable to
+maintain entanglement after about 60 miles.
+
+•
+
+Qubits can also be kept entangled over large distances via satellite, but
+covering the planet with outer-space quantum devices is expensive.
+
+•
+
+There are still huge engineering challenges, therefore, to building large-scale
+"teleportation networks" that could effectively link up qubits across the world.
+Once the entanglement network is in place, the magic can start: linked qubits
+won't need to run through any form of physical infrastructure anymore to
+deliver their message.
+
+•
+
+During transmission, therefore, the quantum key would virtually be invisible
+to third parties, impossible to intercept, and reliably "teleported" from one
+endpoint to the next. The idea will resonate well with industries that deal with
+sensitive data, such as banking, health services or aircraft communications.
+And it is likely that governments sitting on top secret information will also be
+early adopters of the technology.
+
+Quantum Networking:
+Entanglement and Repeaters
+•
+
+WHAT ELSE COULD WE DO WITH THE QUANTUM INTERNET?
+•
+
+'Why bother with entanglement?' you may ask. After all, researchers could
+simply find ways to improve the "usual" form of QKD.
+•
+
+•
+
+Quantum repeaters, for example, could go a long way in increasing
+communication distance in fiber-optic cables, without having to go so
+far as to entangle qubits.
+
+That is without accounting for the immense potential that entanglement could
+have for other applications. QKD is the most frequently discussed example of
+what the quantum internet could achieve because it is the most accessible
+application of the technology.
+•
+
+But security is far from being the only field that is causing excitement
+among researchers.
+
+•
+
+The entanglement network used for QKD could also be used, for example, to
+provide a reliable way to build up quantum clusters made of entangled qubits
+located in different quantum devices.
+
+•
+
+Researchers won't need a particularly powerful piece of quantum hardware to
+connect to the quantum internet – in fact, even a single-qubit processor could
+do the job.
+•
+
+But by linking together quantum devices that, as they stand, have
+limited capabilities, scientists expect that they could create a quantum
+supercomputer to surpass them all.
+
+Quantum Networking:
+Advanced Quantum Computers
+• By connecting many smaller quantum devices together, therefore, the quantum internet
+could start solving the problems that are currently impossible to achieve in a single
+quantum computer.
+• This includes expediting the exchange of vast amounts of data and carrying out
+large-scale sensing experiments in astronomy, materials discovery, and life
+sciences.
+• For this reason, scientists are convinced that we could reap the benefits of the
+quantum internet before tech giants such as Google and IBM even achieve
+quantum supremacy – the moment when a single quantum computer will solve a
+problem that is intractable for a classical computer.
+
+• Google and IBM's most advanced quantum computers currently sit around 50 qubits,
+which, on its own, is much less than is needed to carry out the phenomenal calculations
+needed to solve the problems that quantum research hopes to address.
+• On the other hand, linking such devices together via quantum entanglement could
+result in clusters worth several thousand of qubits.
+• For many scientists, creating such computing strength is in fact the ultimate goal
+of the quantum internet project.
+
+Quantum Networking
+•
+
+WHAT COULDN'T WE DO WITH THE QUANTUM INTERNET?
+•
+
+For the foreseeable future, the quantum Internet could not be used to exchange data in the
+way that we currently do on our laptops.
+
+•
+
+Imagining a generalized, mainstream quantum internet would require anticipating a few
+decades (or more) of technological advancements. As much as scientists dream of the future
+of the quantum internet, therefore, it is impossible to draw parallels between the project as it
+currently stands, and the way we browse the web every day.
+
+•
+
+A lot of quantum communication research today is dedicated to finding out how to best
+encode, compress and transmit information thanks to quantum states.
+•
+
+•
+
+But the type of information that scientists are looking at sending over the quantum internet
+has little to do with opening up an inbox and scrolling through emails.
+•
+
+•
+
+Quantum states, of course, are known for their extraordinary densities, and scientists
+are confident that one node could teleport a great deal of data.
+
+And in fact, replacing the classical internet is not what the technology has set out to
+do.
+
+Rather, researchers are hoping that the quantum internet will sit next to the classical Internet,
+and would be used for more specialized apps.
+
+•
+
+The quantum internet will perform tasks that can be done faster on a quantum
+computer than on classical computers, or which are too difficult to perform even on the
+best supercomputers that exist today.
+
+Quantum Networking
+•
+
+SO, WHAT ARE WE WAITING FOR?
+•
+
+Scientists already know how to create entanglement between qubits and have
+even been successfully leveraging entanglement for QKD.
+
+•
+
+China, a long-time investor in quantum networks, has broken records on
+satellite-induced entanglement. Chinese scientists recently established
+entanglement and achieved QKD over a record-breaking 745 miles.
+
+•
+
+The next stage, however, is scaling up the infrastructure. All experiments so far
+have only connected two endpoints. Now that point-to-point communication
+has been achieved, scientists are working on creating a network in which
+multiple senders and multiple receivers could exchange over the quantum
+internet on a global scale.
+
+•
+
+Essentially, the idea is to find the best ways to churn out many entangled
+qubits on demand, over long distances, and simultaneously between many
+different points. This is much easier said than done: for example, maintaining
+the entanglement between a device in China and one in the US would probably
+require an intermediate node, on top of new routing protocols.
+
+•
+
+And countries are opting for different technologies when it comes to
+establishing entanglement in the first place. While China is picking satellite
+technology, optical fiber is the method favored by the US DoE, which is now
+trying to create a network of quantum repeaters that can augment the
+distance that separates entangled qubits.
+
+• In the US, particles have remained entangled through optical fiber
+over a 52-mile "quantum loop" in the suburbs of Chicago, without
+the need for quantum repeaters.
+• The network will soon be connected to one of the DoE's
+laboratories to establish an 80-mile quantum testbed.
+• In the EU, the Quantum Internet Alliance was formed in 2018 to
+develop a strategy for a quantum internet and demonstrated
+entanglement over 31 miles last year.
+• For quantum researchers, the goal is to scale the networks up to a
+national level first, and one day even internationally.
+• The vast majority of scientists agree that this is unlikely to happen
+before a couple of decades
+•
+
+The quantum internet is without a doubt a very long-term
+project, with many technical obstacles still standing in the
+way.
+
+• But the unexpected outcomes that the technology will inevitably
+bring about on the way will make for an invaluable scientific journey,
+complete with a plethora of outlandish quantum applications that,
+for now, cannot even be predicted.
+
+Quantum Networking:
+Optical Fiber
+
+Quantum Computers
+• Quantum computers use atoms to
+perform calculations
+• Computation depends on principles
+of quantum theory
+• Qubit: quantum bit
+• Superposition of Qubit
+
+• Entanglement of Qubit
+
+34
+
+Features of Quantum Computers
+
+35
+
+Classical bit and Qubit
+• The bit is the fundamental concept of classical computation and classical information.
+• Quantum computation and quantum information are built upon an analogous concept,
+the quantum bit, or qubit for short.
+• What is a qubit?
+• We’re going to describe qubits as mathematical objects with certain specific properties.
+• ‘But hang on’, you say, ‘I thought qubits were physical objects.’
+• It’s true that qubits, like bits, are realized as actual physical systems, and we
+describe in detail how this connection between the abstract mathematical point of
+view and real systems is made.
+• However, for the most part, we treat qubits as abstract mathematical objects.
+• The beauty of treating qubits as abstract entities is that it gives us the freedom to
+construct a general theory of quantum computation and quantum information which
+does not depend upon a specific system for its realization.
+
+36
+
+Classical bit and Qubit (Cont.)
+• A classical bit is a data element with two values, 0 and 1:
+• It can be represented using an almost endless array of physical phenomena; classical
+computers typically use charge in active CMOS circuits or the direction of a tiny magnetic field
+on a disk drive.
+• A qubit is the quantum equivalent of a bit:
+• It is represented using either a true two-level system, such as the direction of polarization of a
+photon or the direction of spin of an electron, or a pseudo-two-level system, such as two
+energy levels of an atom that can be treated as a two-level system.
+• Of course, an electron spins in either the “up” or “down” direction, not zero and one; therefore,
+we chose to label the two states as our zero and one states, much as we choose e.g. +5 volts to
+be a logical one and ground to be a logical zero in classical circuits.
+
+|ψ>
+
+• The difference between a classical bit and a qubit is that a qubit can be in a superposition of the
+two states; it can be partially zero and partially one. The state of a qubit can be written as
+
+|ψ> = α|0> + β|1>
+where α and β are complex numbers, |α|2 is the probability of finding the qubit in the state
+0, and |α|2 + |β|2 = 1: the qubit must be found to be in one state or the other.
+37
+
+Classical vs. Quantum Computer
+
+38
+
+Classical Computation vs. Quantum
+Computation
+
+39
+
+Qubits
+
+40
+
+41
+
+Qubits Representation in Bloch sphere
+
+42
+
+Mathematical Model of Qubit
+Qubit
+
+43
+
+Concept of Qubit
+
+44
+
+Physical
+Realizations
+of Qubits
+
+45
+
+Classical vs. Quantum Computers Basics
+Classical Computer
+
+Quantum Computer
+
+Computer
+Science
+
+low charge high charge
+
+IC
+
+Circuit Module Logic gates Transistor
+
+4-bit Classical Register
+
+Quantum Circuit
+
+Q-Chamber
+
+4-qubit Register
+• One number
+from 0 to 15
+at a time
+
+• All 16 numbers in a
+superposition allowing
+truly parallel computation
+• Exponential growth with
+addition of each qubit:
+
+46
+
+What is Quantum Computing?
+
+Quantum + Computing = Quantum Computing
+
+A quantum computer is a machine that performs calculations
+based on the laws of quantum mechanics, which is the behavior
+of particles at the sub-atomic level
+47
+
+
