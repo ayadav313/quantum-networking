@@ -1,4 +1,4 @@
-# Quantum-Computing-and-Networking
+# Quantum Computing & Networking
 
 ## Cloning repository
 ```bash
